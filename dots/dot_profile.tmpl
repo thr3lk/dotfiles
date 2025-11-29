@@ -14,6 +14,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 {{- end -}}
 
+{{- if eq .osid "linux-pop" -}}
+export PATH=$PATH:~/bin
+
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+{{- end -}}
+
+
 ## Colorize!
 export CLICOLOR=1
 # export LS_COLORS=
