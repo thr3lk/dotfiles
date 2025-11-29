@@ -8,8 +8,10 @@ export EDITOR='zed -w'
 
 export SSH_AUTH_SOCK="$HOME/.1password/agent.sock"
 
+{{- if eq .osid "darwin" -}}
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
+{{- end -}}
 
 ## Colorize!
 export CLICOLOR=1
