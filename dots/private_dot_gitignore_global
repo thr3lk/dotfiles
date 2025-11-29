@@ -1,0 +1,49 @@
+*~
+
+# ignore log files and databases
+*.log
+log.txt
+logs
+*.log
+npm-debug.log*
+pip-log.txt
+pip-delete-this-directory.txt
+*.sql
+*.sqlite
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.der
+*.key
+*.pem
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+.DS_Store
+.Trash
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+.nova/
+
+# --------------------------------------------------------
+# BEGIN Explictly Allowed Files (i.e. do NOT ignore these)
+# --------------------------------------------------------
+# track these files, if they exist
+!.editorconfig
+!.env.example
+!.git-blame-ignore-revs
+!.gitignore
+!.nvmrc
+!.phpcs.xml.dist
+
+# https://stackoverflow.com/questions/44206782/do-i-commit-the-package-lock-json-file-created-by-npm-5
+!package-lock.json

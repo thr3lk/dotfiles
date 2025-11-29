@@ -1,0 +1,18 @@
+{{- $name := promptStringOnce . "name" "User name. Ex: goofy" -}}
+
+{{- $device_purposes := list "work" "personal" -}}
+
+{{- $device_purpose := promptChoiceOnce . "device_purpose" "which configuration should we use for this machine?" $device_purposes -}}
+
+{{- $gh_email := promptStringOnce . "github email" "goofy@skyschool.net" -}}
+
+{{- $osid := .chezmoi.os -}}
+{{- if hasKey .chezmoi.osRelease "id" -}}
+{{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
+{{- end -}}
+
+[data]
+    name = {{ $name | quote }}
+    gh_email = {{ $gh_email | quote }}
+    device_purpose = {{- $device_purpose | quote -}}
+    osid = {{ $osid | quote }}

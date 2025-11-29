@@ -1,0 +1,25 @@
+## configure path
+export PATH=$PATH:/opt/misc/bin
+
+## Setting PATH for Python 3.12
+export PATH=/Library/Frameworks/Python.framework/Versions/3.12/bin:$PATH
+
+export EDITOR='zed -w'
+
+export SSH_AUTH_SOCK="$HOME/.1password/agent.sock"
+
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+## Colorize!
+export CLICOLOR=1
+# export LS_COLORS=
+# LS_COLORS sets the theme for more than just ls: it's also used by tree, fd, and others.
+## for more: https://github.com/sharkdp/vivid
+
+## case insensitive autocompletion
+## https://askubuntu.com/questions/87061/can-i-make-tab-auto-completion-case-insensitive-in-bash
+
+# set completion-ignore-case On
+
+## no, don't do it here, do it in .inputrc

@@ -1,0 +1,6 @@
+export STARSHIP_CONFIG=~/.config/starship.toml
+eval "$(starship init bash)"
+
+if [ -f ~/.aliases ]; then
+    source ~/.aliases
+fi

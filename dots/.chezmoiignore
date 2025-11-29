@@ -1,0 +1,35 @@
+readme.md
+.config/zed/settings_backup.json
+.config/zed/themes/*
+.config/zed/conversations
+.config/zed/prompts
+.config/zed/themes
+
+# becasue I'm a mac user lol
+**/.DS_Store
+.Trash
+
+# stuff
+.cache
+.zcompdump
+.**_history
+.**_sessions
+
+
+# stuff that usually isn't dots
+Applications
+Calibre Library
+Desktop
+Documents
+Downloads
+Movies
+Music
+Parallels
+Pictures
+Public
+Zotero
+bin
+
+Library
+# but I do actually want nushell stuff
+!Library/Application Support/nushell/*
