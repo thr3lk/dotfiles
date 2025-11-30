@@ -18,4 +18,7 @@
 # them for future reference.
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
+
+use ($nu.default-config-dir | path join mise.nu)
+
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")

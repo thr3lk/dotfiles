@@ -30,6 +30,6 @@ Public
 Zotero
 bin
 
-Library
+#Library
 # but I do actually want nushell stuff
 !Library/Application Support/nushell/*
