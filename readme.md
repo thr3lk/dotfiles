@@ -26,6 +26,13 @@ install homebrew[^linuxbrew] and, if linux, configure the default package manage
 Then install core packages needed to continue: usually chezmoi and 1password
 
 ### chezmoi
+
+on mac: 
+brew install chezmoi
+
+on linux
+`sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/bin/`
+
 on init this chezmoi collects a handful of variables that shape how the config is organized:
 - name
 - whether this is a work machine or a personal machine
