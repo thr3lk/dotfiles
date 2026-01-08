@@ -14,6 +14,7 @@ readme.md
 .zcompdump
 .**_history
 .**_sessions
+**/**backup**
 
 
 # stuff that usually isn't dots
